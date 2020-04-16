@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+
+<body>
+    {% if name == 'kiyokiyo' %}
+    <h1>
+        情緒不安定な人
+    </h1>
+    {% elif name %}
+    <h1>{{name}}神社</h1>
+    {% else %}
+    <h1>チューチュートレイン</h1>
+    {% endif %}
+
+    <img src="https://2.bp.blogspot.com/-Rz17gnty2LE/V_4cUrhVjaI/AAAAAAAA-zE/HIY2HEWSGxY2ElvkyNX5h4g60W0p0Gs1QCLcB/s400/joucho_fuantei_man.png"
+        alt="鳥居">
+
+    {% for class in graph_class %}
+    <p>{{class}}</p>
+    {% endfor %}
+
+    {% for s in syokugyo %}
+    <p>{{s}}</p>
+    {% endfor %}
+</body>
+
+</html>
